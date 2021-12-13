@@ -5,6 +5,7 @@
     "scripts": {
         "serve": "npm run dev:h5",
         "build": "npm run build:h5",
+        "lint": "eslint --ext .js src",
         "build:h5": "cross-env NODE_ENV=production UNI_PLATFORM=h5 vue-cli-service uni-build",
         "dev:h5": "cross-env NODE_ENV=development UNI_PLATFORM=h5 vue-cli-service uni-serve"
     },
@@ -47,12 +48,14 @@
         "@dcloudio/webpack-uni-pages-loader": "^2.0.1-32920211122003",
         "@vue/cli-plugin-babel": "~4.5.0",
         "@vue/cli-service": "~4.5.0",
+        "@vue/eslint-config-airbnb": "^6.0.0",
         "babel-plugin-import": "^1.11.0",
         "cross-env": "^7.0.2",
         "jest": "^25.4.0",
         "mini-types": "*",
         "miniprogram-api-typings": "*",
         "postcss-comment": "^2.0.0",
+        "silent": "^0.1.2",
         "vue-template-compiler": "^2.6.11"
     },
     "browserslist": [
