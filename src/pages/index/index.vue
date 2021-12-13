@@ -28,12 +28,13 @@ export default {
 }
 
 .logo {
-  height: 200rpx;
-  width: 200rpx;
+  height:     200rpx;
   margin: 200rpx auto 50rpx auto;
+  width: 200rpx;
 }
 
 .text-area {
+  color: #8f8f94;
   display: flex;
   justify-content: center;
 }

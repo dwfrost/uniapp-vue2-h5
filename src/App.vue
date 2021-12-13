@@ -7,6 +7,8 @@ export default {
     console.log('App Show');
   },
   onHide() {
+    // '**/*.{vue,css,scss,less,sass}'
+    // \"**/*.vue\"
     console.log('App Hide');
   },
 };

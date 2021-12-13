@@ -6,6 +6,8 @@
     "serve": "npm run dev:h5",
     "build": "npm run build:h5",
     "lint": "eslint --fix --ext .js,.vue src",
+    "stylelint": "stylelint --fix",
+    "prepare": "husky install",
     "build:h5": "cross-env NODE_ENV=production UNI_PLATFORM=h5 vue-cli-service uni-build",
     "dev:h5": "cross-env NODE_ENV=development UNI_PLATFORM=h5 vue-cli-service uni-serve"
   },
@@ -35,6 +37,8 @@
   },
   "devDependencies": {
     "@babel/runtime": "~7.12.0",
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
     "@dcloudio/types": "*",
     "@dcloudio/uni-automator": "^2.0.1-32920211122003",
     "@dcloudio/uni-cli-i18n": "^2.0.1-32920211122003",
@@ -56,11 +60,16 @@
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
+    "husky": "^7.0.4",
     "jest": "^25.4.0",
+    "lint-staged": "^12.1.2",
     "mini-types": "*",
     "miniprogram-api-typings": "*",
     "postcss-comment": "^2.0.0",
     "silent": "^0.1.2",
+    "stylelint": "^14.1.0",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-order": "^5.0.0",
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [
