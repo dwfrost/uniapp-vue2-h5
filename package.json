@@ -6,7 +6,6 @@
     "serve": "npm run dev:h5",
     "build": "npm run build:h5",
     "lint": "eslint --fix --ext .js,.vue src",
-    "stylelint": "stylelint --fix",
     "prepare": "husky install",
     "build:h5": "cross-env NODE_ENV=production UNI_PLATFORM=h5 vue-cli-service uni-build",
     "dev:h5": "cross-env NODE_ENV=development UNI_PLATFORM=h5 vue-cli-service uni-serve"
@@ -67,9 +66,6 @@
     "miniprogram-api-typings": "*",
     "postcss-comment": "^2.0.0",
     "silent": "^0.1.2",
-    "stylelint": "^14.1.0",
-    "stylelint-config-standard": "^24.0.0",
-    "stylelint-order": "^5.0.0",
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [
