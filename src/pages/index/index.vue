@@ -19,18 +19,17 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.logo {
-  height: 200rpx;
-  margin: 200rpx auto 50rpx auto;
-  width: 200rpx;
+  .logo {
+    height: 200rpx;
+    margin: 200rpx auto 50rpx auto;
+    width: 200rpx;
+  }
 }
 
 .text-area {
